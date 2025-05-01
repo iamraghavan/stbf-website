@@ -1,0 +1,242 @@
+[
+    {
+        "title": "All Types of Building Construction",
+        "slug": "all-types-of-building-construction",
+        "description": "Building a custom home or commercial structure is more than just assembling bricks and mortar — it's about bringing your unique vision to life with precision and care. At our company, we combine expert craftsmanship, innovative techniques, and a deep understanding of modern construction to deliver outstanding results. Every project we undertake reflects our commitment to quality, safety, and long-lasting value. Whether you're envisioning a cozy family home or a state-of-the-art commercial facility, we approach every build with the same level of passion and professionalism. Partner with us to experience a construction journey that prioritizes your ideas, comfort, and future investment.",
+        "image": "assets/r_files/20220706_072537.webp",
+        "whats_included": [
+            {
+                "title": "Personalized Design Consultation",
+                "description": "Collaborate closely with our experienced architects to create a bespoke layout that perfectly complements your preferences, lifestyle, and budget. We ensure your ideas and inspirations are seamlessly translated into architectural reality."
+            },
+            {
+                "title": "High-Quality Materials & Craftsmanship",
+                "description": "We use carefully sourced, top-tier materials combined with the expertise of skilled professionals to ensure your building stands the test of time. Every element is chosen for both its durability and aesthetic appeal."
+            },
+            {
+                "title": "Project Management & Updates",
+                "description": "A dedicated project manager will oversee every phase, providing consistent, transparent updates so you’re always in the loop. Expect clear timelines, regular site inspections, and detailed progress reports."
+            }
+        ],
+        "no_compromises": [
+            {
+                "title": "Premium Materials",
+                "description": "Only the finest, industry-certified materials are used to ensure lasting durability, impeccable finishes, and superior performance. Your project deserves nothing less than the absolute best."
+            },
+            {
+                "title": "Expert Craftsmanship",
+                "description": "Our skilled construction team delivers precise workmanship, ensuring every structure meets our high standards of safety, functionality, and beauty. We treat each build like it’s our own."
+            },
+            {
+                "title": "Rigorous Quality Checks",
+                "description": "Multiple quality inspections are conducted at every stage of construction to uphold our strict quality benchmarks. This ensures that every detail aligns with your expectations and our company standards."
+            }
+        ],
+        "customized_solutions": [
+            {
+                "title": "Tailored Designs",
+                "description": "Our custom designs are carefully crafted to reflect your unique vision and lifestyle, combining practicality with artistic expression. Every design element is chosen to enhance both function and visual appeal."
+            },
+            {
+                "title": "Flexible Planning",
+                "description": "We offer adaptable construction plans that accommodate modifications during the build, ensuring your evolving ideas can be smoothly integrated without delay. Your satisfaction remains our top priority."
+            },
+            {
+                "title": "Personalized Support",
+                "description": "From start to finish, a dedicated support team will be on hand to address your specific needs, questions, and concerns. We’re committed to making your construction journey smooth, stress-free, and rewarding."
+            }
+        ]
+    },
+    {
+        "title": "Interiors",
+        "slug": "interiors",
+        "description": "Transform your space with bespoke interior design solutions that blend aesthetics and functionality.",
+        "image": "assets/images/service/interiors.webp",
+        "whats_included": [
+            {
+                "title": "Personalized Design Consultation",
+                "description": "Work with our designers to create interiors that match your style."
+            },
+            {
+                "title": "High-Quality Materials & Craftsmanship",
+                "description": "Premium materials and expert installation for lasting beauty."
+            },
+            {
+                "title": "Project Management & Updates",
+                "description": "Stay informed with regular updates from your project manager."
+            }
+        ],
+        "no_compromises": [
+            {
+                "title": "Top-Tier Materials",
+                "description": "Sourced from trusted suppliers for quality and durability."
+            },
+            {
+                "title": "Skilled Artisans",
+                "description": "Experienced professionals ensure flawless execution."
+            },
+            {
+                "title": "Attention to Detail",
+                "description": "Every element is meticulously crafted."
+            }
+        ],
+        "customized_solutions": [
+            {
+                "title": "Custom Interiors",
+                "description": "Designs tailored to your lifestyle and preferences."
+            },
+            {
+                "title": "Space Optimization",
+                "description": "Maximize functionality without sacrificing style."
+            },
+            {
+                "title": "Personalized Support",
+                "description": "Dedicated team to bring your vision to life."
+            }
+        ]
+    },
+    {
+        "title": "Renovation",
+        "slug": "renovation",
+        "description": "Revitalize your existing space with our comprehensive renovation services tailored to your needs.",
+        "image": "assets/images/service/renovation.webp",
+        "whats_included": [
+            {
+                "title": "Personalized Design Consultation",
+                "description": "Plan your renovation with our expert team."
+            },
+            {
+                "title": "High-Quality Materials & Craftsmanship",
+                "description": "Quality materials and skilled workmanship for lasting results."
+            },
+            {
+                "title": "Project Management & Updates",
+                "description": "Transparent updates to keep you informed."
+            }
+        ],
+        "no_compromises": [
+            {
+                "title": "Durable Materials",
+                "description": "High-quality materials for long-lasting renovations."
+            },
+            {
+                "title": "Expert Execution",
+                "description": "Skilled team ensures precision and quality."
+            },
+            {
+                "title": "Quality Assurance",
+                "description": "Thorough checks to maintain high standards."
+            }
+        ],
+        "customized_solutions": [
+            {
+                "title": "Custom Renovations",
+                "description": "Tailored solutions to refresh your space."
+            },
+            {
+                "title": "Flexible Planning",
+                "description": "Adaptable plans to meet your needs."
+            },
+            {
+                "title": "Dedicated Support",
+                "description": "Personalized assistance throughout the project."
+            }
+        ]
+    },
+    {
+        "title": "Architectural Planning (2D & 3D)",
+        "slug": "architectural-planning",
+        "description": "Bring your vision to life with detailed 2D and 3D architectural planning services.",
+        "image": "assets/images/service/architectural-planning.webp",
+        "whats_included": [
+            {
+                "title": "Personalized Design Consultation",
+                "description": "Collaborate to create detailed architectural plans."
+            },
+            {
+                "title": "High-Quality Materials & Craftsmanship",
+                "description": "Accurate and detailed plans using advanced tools."
+            },
+            {
+                "title": "Project Management & Updates",
+                "description": "Regular updates on plan development."
+            }
+        ],
+        "no_compromises": [
+            {
+                "title": "Precision Planning",
+                "description": "Accurate 2D and 3D plans for perfect execution."
+            },
+            {
+                "title": "Expert Designers",
+                "description": "Experienced architects deliver high-quality plans."
+            },
+            {
+                "title": "Advanced Tools",
+                "description": "Latest software for precise and detailed designs."
+            }
+        ],
+        "customized_solutions": [
+            {
+                "title": "Custom Plans",
+                "description": "Tailored 2D and 3D designs to match your vision."
+            },
+            {
+                "title": "Iterative Design",
+                "description": "Multiple revisions to perfect your plans."
+            },
+            {
+                "title": "Personalized Support",
+                "description": "Dedicated team to guide you through the process."
+            }
+        ]
+    },
+    {
+        "title": "Bank Loan Estimation",
+        "slug": "bank-loan-estimation",
+        "description": "Accurate financial planning and estimation services to secure bank loans for your projects.",
+        "image": "assets/images/service/bank-loan-estimation.webp",
+        "whats_included": [
+            {
+                "title": "Personalized Consultation",
+                "description": "Work with our experts to estimate project costs."
+            },
+            {
+                "title": "Detailed Reports",
+                "description": "Comprehensive reports for bank loan applications."
+            },
+            {
+                "title": "Project Management & Updates",
+                "description": "Stay informed with regular updates on estimations."
+            }
+        ],
+        "no_compromises": [
+            {
+                "title": "Accurate Estimations",
+                "description": "Precise cost projections for reliable planning."
+            },
+            {
+                "title": "Expert Analysts",
+                "description": "Experienced team ensures accurate financial reports."
+            },
+            {
+                "title": "Transparent Process",
+                "description": "Clear and detailed documentation for banks."
+            }
+        ],
+        "customized_solutions": [
+            {
+                "title": "Tailored Estimations",
+                "description": "Custom financial plans for your project."
+            },
+            {
+                "title": "Flexible Adjustments",
+                "description": "Adaptable estimates to meet bank requirements."
+            },
+            {
+                "title": "Personalized Support",
+                "description": "Dedicated assistance for loan applications."
+            }
+        ]
+    }
+]

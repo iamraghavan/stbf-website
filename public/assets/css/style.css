@@ -15793,10 +15793,10 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
   font-size: 15px;
 }
 .single-service-one .inner a.read-more-narrow {
-  color: #F84E1D;
+  color: var(--color-primary);
 }
 .single-service-one:hover .icon {
-  background: #F84E1D;
+  background: var(--color-primary);
 }
 
 .swiper-area-wrapper {
@@ -15929,7 +15929,7 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
   background: #FFFFFF;
   border: 1px solid #E4DED8;
   box-shadow: 0px 4px 29px rgba(57, 46, 35, 0.18);
-  color: #F84E1D;
+  color: var(--color-primary);
   font-weight: 600;
 }
 .single-choose-us-one .title {
@@ -16020,7 +16020,7 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
   box-shadow: none;
 }
 .tab-area-service-button li.nav-item button.nav-link.active {
-  background: #F84E1D;
+  background: var(--color-primary);
   color: #fff;
 }
 
@@ -16331,7 +16331,7 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
   height: 87px;
   left: 70px;
   top: 70px;
-  background: #F84E1D;
+  background: var(--color-primary);
   mix-blend-mode: normal;
   opacity: 0.2;
   filter: blur(30px);
@@ -16766,7 +16766,7 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
   color: #fff;
 }
 .about-thumbnail-inner-one .content-wrapper .single.primary {
-  background: #F84E1D;
+  background: var(--color-primary);
 }
 
 .bg_white {
@@ -18417,7 +18417,7 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
   color: #7C7C84;
 }
 .single-blog-three .top-area .tag i {
-  color: #F84E1D;
+  color: var(--color-primary);
 }
 
 .rts-title-between-area-four {
@@ -18762,7 +18762,7 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
   bottom: -100%;
   width: 100%;
   padding: 30px;
-  background: linear-gradient(90deg, #F84E1D 0%, rgba(248, 78, 29, 0) 100%);
+  background: linear-gradient(90deg, var(--color-primary) 0%, rgba(248, 78, 29, 0) 100%);
   backdrop-filter: blur(2.5px);
   border-radius: 0px 0px 10px 10px;
   transition: all 0.5s;
@@ -19182,7 +19182,7 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
 }
 
 .bg-primary {
-  background: #F84E1D !important;
+  background: var(--color-primary) !important;
 }
 
 .cta-wrapper-inner {
@@ -19268,7 +19268,7 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
   height: 386px;
   left: 35px;
   bottom: -15px;
-  background: #F84E1D;
+  background: var(--color-primary);
   opacity: 0.53;
   filter: blur(90px);
   z-index: -1;
@@ -19740,7 +19740,7 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
   margin-bottom: 15px;
 }
 .blog-signle-style-four .inner-content .top-area .tag {
-  color: #F84E1D;
+  color: var(--color-primary);
   font-weight: 500;
   background: #EDECEC;
   display: block;
@@ -21621,7 +21621,7 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
   position: absolute;
   width: 1000px;
   height: 600px;
-  background: #F84E1D;
+  background: var(--color-primary);
   mix-blend-mode: plus-darker;
   opacity: 1;
   filter: blur(190px);
@@ -21639,7 +21639,7 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
   top: 60%;
   transform: translate(-50%, -50%);
   z-index: -1;
-  background: #F84E1D;
+  background: var(--color-primary);
   mix-blend-mode: normal;
   opacity: 1;
   filter: blur(500px);
@@ -22111,7 +22111,7 @@ edit .quantity-edit button {
   width: 100%;
   bottom: 0;
   height: 2px;
-  background: linear-gradient(90deg, #F84E1D 0%, rgba(248, 78, 29, 0.1) 100%);
+  background: linear-gradient(90deg, var(--color-primary) 0%, rgba(248, 78, 29, 0.1) 100%);
 }
 .single-brand-area-style .icon::before {
   content: "";
@@ -22206,7 +22206,7 @@ edit .quantity-edit button {
   border-radius: 10px;
 }
 .progress-wrapper-main .single-progress-area-h .progress .progress-bar {
-  background: linear-gradient(270deg, #F84E1D 0%, #1D1D1D 55%);
+  background: linear-gradient(270deg, var(--color-primary) 0%, #1D1D1D 55%);
   border-radius: 100px;
 }
 
@@ -22583,7 +22583,7 @@ edit .quantity-edit button {
   transition: 0.3s;
 }
 .single-team-details-top-area .right-content-inner .social-area-wrapper-one li a:hover {
-  background: #F84E1D;
+  background: var(--color-primary);
 }
 .single-team-details-top-area .right-content-inner .social-area-wrapper-one li a:hover i {
   color: #fff;
@@ -23991,7 +23991,7 @@ hr.history {
 }
 .commit-ment-community-wrapper-one .inner-content span {
   font-size: 16px;
-  color: #F84E1D;
+  color: var(--color-primary);
   text-transform: uppercase;
   font-weight: 600;
   margin-bottom: 12px;

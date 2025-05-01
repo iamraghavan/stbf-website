@@ -7,10 +7,10 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [PageController::class, 'index'])->name('index');
 
 
-Route::get('/about', [PageController::class, 'about'])->name('about');
+Route::get('/about/sri-thiruthani-builders-and-foundation', [PageController::class, 'about'])->name('about');
 
 Route::get('/services', [PageController::class, 'services'])->name('services');
-Route::get('/services/building-construction', [PageController::class, 'buildingConstruction'])->name('services.building-construction');
+Route::get('/services/all-types-of-building-construction', [PageController::class, 'buildingConstruction'])->name('services.all-types-of-building-construction');
 Route::get('/services/interiors', [PageController::class, 'interiors'])->name('services.interiors');
 Route::get('/services/renovation', [PageController::class, 'renovation'])->name('services.renovation');
 Route::get('/services/architectural-planning', [PageController::class, 'architecturalPlanning'])->name('services.architectural-planning');

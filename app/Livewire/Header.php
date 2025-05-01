@@ -13,7 +13,7 @@ class Header extends Component
             'name' => 'Services',
             'route' => 'services',
             'children' => [
-                ['name' => 'All Types of Building Construction', 'route' => 'services.building-construction'],
+                ['name' => 'All Types of Building Construction', 'route' => 'services.all-types-of-building-construction'],
                 ['name' => 'Interiors', 'route' => 'services.interiors'],
                 ['name' => 'Renovation', 'route' => 'services.renovation'],
                 ['name' => 'Architectural Planning (2D & 3D)', 'route' => 'services.architectural-planning'],

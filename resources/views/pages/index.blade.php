@@ -222,7 +222,7 @@
                         <h2 class="title">We’re The Leader In <br>
                             Construction Industry</h2>
                     </div>
-                    <a href="appoinment.html" class="rts-btn btn-primary">Make an Appointment</a>
+                    <a href="" class="rts-btn btn-primary">Make an Appointment</a>
                 </div>
             </div>
         </div>
