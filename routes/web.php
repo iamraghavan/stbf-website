@@ -29,3 +29,4 @@ Route::get('/quote', [PageController::class, 'quote'])->name('quote');
 
 
 Route::get('/contact', [PageController::class, 'contact'])->name('contact');
+Route::post('/s/submit/contact-form', [PageController::class, 'submit'])->name('submit.contact-form');
