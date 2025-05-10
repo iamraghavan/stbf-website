@@ -66,6 +66,23 @@
                 </div>
             </div>
             <div class="col-lg-6">
+
+                @if ($errors->any())
+    <div style="color: red;">
+        <ul>
+            @foreach ($errors->all() as $error)
+                <li>{{ $error }}</li>
+            @endforeach
+        </ul>
+    </div>
+@endif
+
+@if (session('success'))
+    <p style="color: green;">{{ session('success') }}</p>
+    <script>
+        alert("{{ session('success') }}");
+    </script>
+@endif
                 <div id="form-messages"></div>
                 <form id="contact-form" action="{{ route('submit.contact-form') }}" method="POST" class="contact-form-area-wrapper">
                     @csrf
@@ -89,106 +106,7 @@
                 </form>
             </div>
 
-            <script>
-            function initAutocomplete() {
-                const input = document.getElementById('address');
-                const autocomplete = new google.maps.places.Autocomplete(input, {
-                    types: ['geocode'], // Restrict to addresses
-                    componentRestrictions: { country: 'in' } // Restrict to India
-                });
-                autocomplete.addListener('place_changed', () => {
-                    const place = autocomplete.getPlace();
-                    if (place.formatted_address) {
-                        input.value = place.formatted_address;
-                    }
-                });
-            }
 
-            // Sanitize message input to remove script tags and HTML
-            function sanitizeInput(input) {
-                const div = document.createElement('div');
-                div.textContent = input; // Escapes HTML/script tags
-                return div.innerHTML.replace(/[<>&"]/g, (char) => ({
-                    '<': '&lt;',
-                    '>': '&gt;',
-                    '&': '&amp;',
-                    '"': '&quot;'
-                }[char]));
-            }
-
-            // Form validation
-            document.getElementById('contact-form').addEventListener('submit', function(e) {
-                e.preventDefault();
-                const form = e.target;
-                const phone = form.querySelector('input[name="phone"]').value;
-                const message = form.querySelector('textarea[name="message"]').value;
-                const messagesDiv = document.getElementById('form-messages');
-
-                // Validate phone number (exactly 10 digits)
-                const phoneRegex = /^[0-9]{10}$/;
-                if (!phoneRegex.test(phone)) {
-                    messagesDiv.innerHTML = '<p style="color: red;">Phone number must be exactly 10 digits.</p>';
-                    return;
-                }
-
-                // Sanitize message
-                const sanitizedMessage = sanitizeInput(message);
-                if (sanitizedMessage !== message) {
-                    messagesDiv.innerHTML = '<p style="color: red;">Message contains invalid characters (e.g., scripts or HTML tags).</p>';
-                    return;
-                }
-
-                // If validation passes, submit the form
-                const formData = new FormData(form);
-                formData.set('message', sanitizedMessage); // Update message with sanitized version
-
-                fetch(form.action, {
-                    method: 'POST',
-                    body: formData,
-                    headers: {
-                        'X-CSRF-TOKEN': form.querySelector('input[name="_token"]').value // Include CSRF token
-                    }
-                })
-                .then(response => response.json())
-                .then(data => {
-                    messagesDiv.innerHTML = `<p style="color: green;">${data.message}</p>`;
-                    form.reset();
-                })
-                .catch(error => {
-                    messagesDiv.innerHTML = '<p style="color: red;">Error submitting form.</p>';
-                    console.error('Form submission error:', error);
-                });
-            });
-
-            // Real-time validation for phone number
-            document.getElementById('contact-form').querySelector('input[name="phone"]').addEventListener('input', function(e) {
-                const messagesDiv = document.getElementById('form-messages');
-                const phone = e.target.value;
-                const phoneRegex = /^[0-9]{10}$/;
-                if (phone && !phoneRegex.test(phone)) {
-                    messagesDiv.innerHTML = '<p style="color: red;">Phone number must be exactly 10 digits.</p>';
-                } else {
-                    messagesDiv.innerHTML = '';
-                }
-            });
-
-            // Real-time sanitization preview for message
-            document.getElementById('message').addEventListener('input', function(e) {
-                const messagesDiv = document.getElementById('form-messages');
-                const message = e.target.value;
-                const sanitizedMessage = sanitizeInput(message);
-                if (message && sanitizedMessage !== message) {
-                    messagesDiv.innerHTML = '<p style="color: red;">Message contains invalid characters (e.g., scripts or HTML tags).</p>';
-                } else {
-                    messagesDiv.innerHTML = '';
-                }
-            });
-            </script>
-
-
-            <script async defer
-                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDfUl7G2CIfkJdCRwakYUQeen2o5cCzcVE&libraries=places&callback=initAutocomplete">
-            </script>
         </div>
     </div>
 </div>
@@ -210,36 +128,13 @@
                     </div>
                  </div>
 
-                 <script>
-                 function initMap() {
-                     const mapOptions = {
-                         center: { lat: 13.1044977, lng: 80.1320214 },
-                         zoom: 19,
-                         mapTypeId: google.maps.MapTypeId.ROADMAP,
-                         disableDefaultUI: false, // Ensure default UI is not disabled
-                         zoomControl: true, // Enable zoom buttons (+/-)
-                         mapTypeControl: true, // Enable map type control (Map/Satellite)
-                         streetViewControl: true, // Enable Street View control
-                         fullscreenControl: true // Enable fullscreen control
-                     };
 
-                     const map = new google.maps.Map(document.getElementById("map"), mapOptions);
-
-                     const marker = new google.maps.Marker({
-                         position: { lat: 13.1044977, lng: 80.1320214 },
-                         map: map,
-                         title: "Sri Thiruthani Foundation"
-                     });
-                 }
-                 </script>
-
-                 <script async defer
-                     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDfUl7G2CIfkJdCRwakYUQeen2o5cCzcVE&callback=initMap">
-                 </script>
          </div>
       </div>
    </div>
 </div>
+
+
 
 @livewire('testimonial')
 @endsection

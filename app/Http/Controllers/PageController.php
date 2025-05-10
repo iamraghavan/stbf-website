@@ -140,9 +140,12 @@ class PageController extends Controller
         return $services;
     }
 
-
-    // contact form submission
-
+    /**
+     * Handle contact form submission
+     *
+     * @param Request $request
+     * @return \Illuminate\Http\JsonResponse
+     */
     public function submit(Request $request)
     {
         // Validate inputs
@@ -174,26 +177,34 @@ class PageController extends Controller
         $submissions[] = $submission;
         file_put_contents($filePath, json_encode($submissions, JSON_PRETTY_PRINT));
 
-        // Send email to owner
-        Mail::raw(
-            "New submission:\nName: {$submission['name']}\nPhone: {$submission['phone']}\nEmail: {$submission['email']}\nAddress: {$submission['address']}\nMessage: {$submission['message']}\nTimestamp: {$submission['timestamp']}",
-            function ($message) {
-                $message->to('raghavanofficials@gmail.com') // Replace with owner's email
-                    ->subject('New Contact Form Submission');
-            }
-        );
+        try {
+            // Send email to owner
+            Mail::send('emails.email-form', ['submission' => $submission], function ($message) {
+                $message->to('raghavanofficials@gmail.com')
+                    ->subject('New Contact Form Submission')
+                    ->from(config('mail.from.address'), config('mail.from.name'));
+            });
 
-        // Send email to user if email is provided
-        if ($submission['email']) {
-            Mail::raw(
-                "Dear {$submission['name']},\nThank you for contacting us! We have received your message:\nPhone: {$submission['phone']}\nAddress: {$submission['address']}\nMessage: {$submission['message']}\nWe will get back to you soon.\nBest regards,\nSri Thiruthani Foundation",
-                function ($message) use ($submission) {
+            // Send email to user if email is provided
+            if ($submission['email']) {
+                Mail::send('emails.email-client', ['submission' => $submission], function ($message) use ($submission) {
                     $message->to($submission['email'])
-                        ->subject('Thank You for Your Submission');
-                }
-            );
+                        ->subject('Thank You for Your Submission')
+                        ->from(config('mail.from.address'), config('mail.from.name'));
+                });
+            }
+        } catch (\Exception $e) {
+            // Log email sending error
+            Log::error('Failed to send contact form emails: ' . $e->getMessage(), [
+                'submission' => $submission,
+                'error' => $e->getTraceAsString(),
+            ]);
+
+            // Optionally, you could return an error response, but since JSON storage succeeded, keep success response
+            return response()->json(['message' => 'Form submitted, but email sending failed'], 500);
         }
 
-        return response()->json(['message' => 'Form submitted successfully']);
+
+        return back()->with('success', 'Your form was submitted successfully!');
     }
 }
